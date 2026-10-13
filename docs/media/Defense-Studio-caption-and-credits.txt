@@ -1,0 +1,11 @@
+I built Defense Studio to rehearse the hard questions, return to the paper, and find my words before the panel. This video uses a fictional teaching paper and scripted sample footage; it does not assess real answers.
+
+Music: Happy Beats & Business Moves Vol. 9 by Sascha Ende — https://ende.app/en/song/12874-happy-beats-business-moves-vol-9
+Source: ENDE.APP. License: Creative Commons Attribution 4.0 International (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/ (artist terms: https://ende.app/standard-license).
+Edits: excerpted, trimmed, faded, normalized and mixed with sound effects for this video. No endorsement implied.
+Sound accents: Kenney, CC0 — https://kenney.nl/assets/ui-audio, https://kenney.nl/assets/casino-audio and https://kenney.nl/assets/impact-sounds.
+Typography: Instrument Serif and DM Sans, SIL Open Font License 1.1; license texts retained in the editable project.
+UI icons: Lucide, ISC license, from the source React app.
+Footage: Scripted sample cues do not assess answers. Groq inference remains unconfigured and unverified. No real thesis, student names, private data, voice feature, grade, ethics approval, guarantee or public launch is depicted.
+
+Footage refreshed from Defense Studio 0.2.0: the redesigned composer and evidence notebook, captured locally with the fictional sample and a staged typed answer.
