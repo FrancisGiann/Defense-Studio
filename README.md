@@ -6,13 +6,17 @@ The included sample is a fictional teaching paper with explicitly scripted rehea
 
 ## Watch the ad
 
-<a href="https://raw.githubusercontent.com/FrancisGiann/Defense-Studio/main/docs/media/Defense-Studio-practice-before-the-panel.mp4">
-  <img src="docs/media/Defense-Studio-practice-before-the-panel-cover.jpg" alt="Defense Studio — Practice before the panel. Download the final 21-second ad." width="280">
+**Know your why** · 23 seconds
+
+<a href="https://raw.githubusercontent.com/FrancisGiann/Defense-Studio/main/docs/media/ads/Defense-Studio-know-your-why.mp4">
+  <img src="docs/media/ads/Defense-Studio-know-your-why-cover.jpg" alt="Defense Studio — Know your why. Open the 23-second ad (MP4)." width="280">
 </a>
 
-[Download the ad (MP4)](https://raw.githubusercontent.com/FrancisGiann/Defense-Studio/main/docs/media/Defense-Studio-practice-before-the-panel.mp4) · [View file on GitHub](docs/media/Defense-Studio-practice-before-the-panel.mp4) · [Caption and credits](docs/media/Defense-Studio-caption-and-credits.txt)
+[Watch or download the ad (MP4)](https://raw.githubusercontent.com/FrancisGiann/Defense-Studio/main/docs/media/ads/Defense-Studio-know-your-why.mp4) · [View file on GitHub](docs/media/ads/Defense-Studio-know-your-why.mp4) · [Caption and credits](docs/media/ads/Defense-Studio-caption-and-credits.txt)
 
-This is version 0.2.0 footage of the fictional sample with a staged typed answer. Music: [Happy Beats & Business Moves Vol. 9](https://ende.app/en/song/12874-happy-beats-business-moves-vol-9) by Sascha Ende, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), excerpted, trimmed, faded, normalized and mixed for the ad. Full music, sound, typography, icon, and footage credits are linked above.
+Defense Studio 0.2.0 screens use a fictional teaching paper, a staged typed answer and scripted sample cues.
+
+Music: [Emotional Piano Vol. 1](https://ende.app/en/song/13051-emotional-piano-vol-1) by Sascha Ende, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Excerpted, faded, gain adjusted, normalized and mixed with sound accents. Full credits are linked above.
 
 ## Included
 

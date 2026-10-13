@@ -1,0 +1,22 @@
+The room goes quiet. Your reason does not have to. Rehearse the hard question, return to the paper, and know your why.
+
+Defense Studio — your thesis-defense rehearsal room. Try Defense Studio.
+
+Music: “Emotional Piano Vol. 1” by Sascha Ende.
+Source: https://ende.app/en/song/13051-emotional-piano-vol-1
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+License URL: https://creativecommons.org/licenses/by/4.0/
+Artist terms: https://ende.app/standard-license
+Edits: 23-second excerpt, dynamic gain build, fades, loudness normalization and sparse ticks/paper accents.
+No endorsement by the artist is implied.
+
+Sound effects: Kenney, CC0 — UI Audio, Casino Audio and Impact Sounds.
+Sources: https://kenney.nl/assets/ui-audio ; https://kenney.nl/assets/casino-audio ; https://kenney.nl/assets/impact-sounds
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Edits: excerpt, timing and gain adjustments.
+
+Footage: Actual Defense Studio 0.2.0 question/source/answer UI from a fictional teaching paper. Paraphrased opening question, staged typed answer, scripted sample. No real research, student data, live AI assessment, voice feature or guaranteed outcome.
+Visual artwork: original vector/CSS props created for this film; actual captures/icon supplied by the verified app project.
+Fonts: Instrument Serif and DM Sans, SIL Open Font License; notices retained.
+Runtime: GSAP Standard License, retained notice; Hyperframes 0.8.150; installed Brag 0.4.0.
+Audio review: objective final-stream loudness, peaks, silence and full decode verified. Subjective audition unavailable; no listening claim.
