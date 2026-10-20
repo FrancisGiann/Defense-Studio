@@ -1,8 +1,8 @@
-# Defense Studio
+# PanelReady
 
 **Practice before the panel.** A local thesis-defense rehearsal workspace for reading a paper, grounding questions in its source, and practising typed answers. Version **0.2.0** · React + TypeScript · Node.js
 
-The included sample is a fictional teaching paper with explicitly scripted rehearsal cues. Sample coaching does not assess your answers. Live Groq inference requires your own local configuration and explicit session consent; it has not been verified with a real API key or real thesis.
+The included sample is a fictional teaching paper with explicitly scripted rehearsal cues. Sample coaching does not assess your answers. Live Groq inference requires your own local configuration and explicit session consent. On October 20, 2026, the configured Groq model completed a synthetic question-and-feedback flow with exact source quotes. No real thesis or private answers were tested. See [PanelReady validation](docs/VALIDATION_PANELREADY_2026-10-20.md).
 
 ## Watch the ad
 
@@ -14,7 +14,7 @@ The included sample is a fictional teaching paper with explicitly scripted rehea
 
 [Watch or download the ad (MP4)](https://raw.githubusercontent.com/FrancisGiann/Defense-Studio/main/docs/media/ads/Defense-Studio-know-your-why.mp4) · [View file on GitHub](docs/media/ads/Defense-Studio-know-your-why.mp4) · [Caption and credits](docs/media/ads/Defense-Studio-caption-and-credits.txt)
 
-Defense Studio 0.2.0 screens use a fictional teaching paper, a staged typed answer and scripted sample cues.
+Recorded before the PanelReady rename: Defense Studio 0.2.0 screens use a fictional teaching paper, a staged typed answer and scripted sample cues.
 
 Music: [Emotional Piano Vol. 1](https://ende.app/en/song/13051-emotional-piano-vol-1) by Sascha Ende, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Excerpted, faded, gain adjusted, normalized and mixed with sound accents. Full credits are linked above.
 
@@ -55,10 +55,10 @@ The default configuration disables Groq and contains no API key. To configure yo
 ```sh
 cp .env.example .env
 # Edit .env locally: set GROQ_API_KEY and GROQ_ENABLED=true.
-node --env-file=.env --watch --import tsx server/index.ts
+npm run dev
 ```
 
-Use the Node `--env-file` command above to load `.env`; `npm run dev` alone does not load that file. Never commit the file or paste a key into chat. Before any provider request, the app asks for consent for the selected paper's excerpts and session answers. The original PDF is not sent to Groq. Provider behavior, account costs, and data policies depend on your account and current Groq terms. The application's mock transport tests are not evidence of successful live inference.
+Both `npm run dev` and `npm start` automatically load a local `.env` file through `server/index.ts`. Restart after configuration changes. Never commit the file or paste a key into chat. Before any provider request, the app asks for consent for the selected paper's excerpts and session answers. The original PDF is not sent to Groq. Provider behavior, account costs, and data policies depend on your account and current Groq terms. The application's mock transport tests are not evidence of successful live inference.
 
 ## Storage and document limits
 
@@ -78,4 +78,5 @@ npm run build
 
 `src/` holds the React interface, `shared/` the types and fictional sample, `server/` the local service/provider boundaries, and `tests/` deterministic ingestion, evidence, repository, transport, and HTTP tests. The only published PDF is the verified fictional teaching sample. Private databases, papers, keys, development captures, build outputs, and the owner-private hosted preview are not included.
 
-Instrument Serif and DM Sans are installed as font packages under their SIL Open Font Licenses; Lucide icons use ISC. The ad's full third-party attributions remain in its caption/credits file. Defense Studio is a provisional working title with no trademark claim.
+Instrument Serif and DM Sans are installed as font packages under their SIL Open Font Licenses; Lucide icons use ISC. The ad's full third-party attributions remain in its caption/credits file. PanelReady was previously named Defense Studio. The repository URL, historical ad filenames, `DEFENSE_DATA_DIR` setting, and `.data/studio.sqlite` path are retained for compatibility.
+

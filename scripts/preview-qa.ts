@@ -27,6 +27,9 @@ try {
   }
   await page.goto(base);
   await page.locator('.studio-desk h1').waitFor();
+  await expect(page).toHaveTitle('PanelReady — your rehearsal room');
+  await expect(page.getByRole('button', { name: 'PanelReady home', exact: true })).toBeVisible();
+  await expect(page.locator('.wordmark > span:last-child')).toHaveText('PanelReady');
   await expect(page.getByRole('button', { name: 'Bring your thesis' })).toBeDisabled();
   await expect(page.getByText('Interactive sample preview · scripted cues, no AI · resets on reload')).toBeVisible();
   await page.screenshot({ path: 'artifacts/preview-desktop.png', fullPage: true, animations: 'disabled' });

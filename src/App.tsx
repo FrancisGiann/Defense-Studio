@@ -161,13 +161,13 @@ export function App() {
           <button
             className="wordmark"
             onClick={() => navigate('home')}
-            aria-label="Defense Studio home"
+            aria-label="PanelReady home"
           >
             <span className="wordmark-symbol" aria-hidden="true">
-              D<span />
+              P<span />
             </span>
             <span>
-              Defense <em>Studio</em>
+              Panel<em>Ready</em>
             </span>
           </button>
           <span className="masthead-purpose">A private room for your research.</span>
@@ -494,7 +494,7 @@ export function App() {
                   )}
                   <p className="small muted">
                     This is rehearsal support. AI feedback can be wrong and is never committee
-                    approval. Defense Studio is a provisional working title.
+                    approval.
                   </p>
                 </section>
               </div>
@@ -502,7 +502,7 @@ export function App() {
           ) : null}
           <footer>
             <span>
-              Defense Studio <span className="footer-dot">·</span> a little clearer, every time.
+              PanelReady <span className="footer-dot">·</span> a little clearer, every time.
             </span>
             <span>
               {PREVIEW ? 'Synthetic sample preview' : 'Private by default'}{' '}
@@ -693,7 +693,7 @@ function StudioDesk({
         </div>
         <div className="desk-folio">
           <div className="folio-binding" aria-hidden="true">
-            <span>DEFENSE STUDIO</span>
+            <span>PANELREADY</span>
           </div>
           <div className="folio-content">
             <div className="folio-top">

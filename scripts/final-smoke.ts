@@ -31,7 +31,7 @@ try {
   const root = 'http://127.0.0.1:4320',
     home = await fetch(root);
   assert.equal(home.status, 200);
-  assert.match(await home.text(), /Defense Studio/);
+  assert.match(await home.text(), /PanelReady/);
   const cookie = home.headers.get('set-cookie')!.split(';')[0],
     headers = { Cookie: cookie, 'Content-Type': 'application/json', 'X-Defense-Request': '1' };
   const health = await fetch(root + '/health');

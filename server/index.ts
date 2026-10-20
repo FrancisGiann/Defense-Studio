@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 app.use(errorHandler);
 server.listen(config.port, '127.0.0.1', () =>
-  console.log(`Defense Studio • http://127.0.0.1:${config.port} • private personal mode`),
+  console.log(`PanelReady • http://127.0.0.1:${config.port} • private personal mode`),
 );
 function shutdown() {
   server.close(() => {

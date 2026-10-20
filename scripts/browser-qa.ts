@@ -74,6 +74,9 @@ try {
   await page.evaluate(() => sessionStorage.removeItem('defense-oriented'));
   await page.reload();
   await page.locator('.studio-desk h1').waitFor();
+  await expect(page).toHaveTitle('PanelReady — your rehearsal room');
+  await expect(page.getByRole('button', { name: 'PanelReady home', exact: true })).toBeVisible();
+  await expect(page.locator('.wordmark > span:last-child')).toHaveText('PanelReady');
   if (!(await page.getByRole('dialog').count()))
     await page.getByRole('button', { name: 'A quick orientation' }).click();
   await page.getByRole('heading', { name: 'Welcome to your rehearsal room.' }).waitFor();

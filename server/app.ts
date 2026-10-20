@@ -47,7 +47,7 @@ export function createApp(
       ![`http://127.0.0.1:${config.port}`, `http://localhost:${config.port}`].includes(origin)
     )
       return next(
-        new AppError(403, 'ORIGIN_BLOCKED', 'Open Defense Studio directly on localhost.'),
+        new AppError(403, 'ORIGIN_BLOCKED', 'Open PanelReady directly on localhost.'),
       );
     if (req.headers['sec-fetch-site'] === 'cross-site')
       return next(new AppError(403, 'CROSS_SITE', 'Cross-site requests are not allowed.'));
@@ -81,7 +81,7 @@ export function createApp(
         new AppError(
           403,
           'REQUEST_BLOCKED',
-          'This action must come from the Defense Studio workspace.',
+          'This action must come from the PanelReady workspace.',
         ),
       );
     next();
@@ -370,7 +370,7 @@ export function createApp(
     });
   });
   app.get('/api/export', (_req, res) => {
-    res.attachment('defense-studio-backup.json').json({
+    res.attachment('panelready-backup.json').json({
       version: 1,
       exportedAt: new Date().toISOString(),
       papers: repo.papers(owner),

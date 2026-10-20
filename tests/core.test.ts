@@ -363,3 +363,28 @@ test('invalid saved answer anchors fail closed, while a first question can use a
   await assert.rejects(provider.feedback(paper, s, 'A typed answer.'));
   assert.equal(calls, 1);
 });
+
+
+test('Groq failures return actionable codes with one transport attempt and a bounded signal', async () => {
+  const config = { ...readConfig(), groqEnabled: true, apiKey: 'synthetic-test-only' };
+  const cases = [
+    { status: 401, code: 'PROVIDER_KEY' },
+    { status: 403, code: 'PROVIDER_KEY' },
+    { status: 500, code: 'PROVIDER_ERROR' },
+    { status: 200, code: 'PROVIDER_FORMAT' },
+    { status: 0, code: 'PROVIDER_UNAVAILABLE' },
+  ];
+  for (const scenario of cases) {
+    let calls = 0;
+    const transport = (async (_url: unknown, init: RequestInit) => {
+      calls++;
+      assert.ok(init.signal instanceof AbortSignal);
+      assert.equal(init.signal.aborted, false);
+      if (!scenario.status) throw new DOMException('Synthetic timeout', 'TimeoutError');
+      return new Response('{}', { status: scenario.status });
+    }) as typeof fetch;
+    const provider = new GroqProvider(config, transport);
+    await assert.rejects(provider.question(paper, approvedSession()), (e: any) => e.code === scenario.code);
+    assert.equal(calls, 1, 'Provider failures must not cause automatic retries');
+  }
+});
